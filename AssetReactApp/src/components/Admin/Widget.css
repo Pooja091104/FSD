@@ -1,0 +1,27 @@
+.dashboard-card {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.dashboard-card .card-body {
+    padding: 1.5rem;
+}
+
+.dashboard-card h6 {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dashboard-card h2 {
+    font-weight: 700;
+    color: #212529;
+}

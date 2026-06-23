@@ -1,0 +1,158 @@
+/* =========================
+   PAGE
+========================= */
+
+.dashboard-container {
+  padding: 25px;
+  background: #f4f7fc;
+  min-height: 100vh;
+}
+
+.welcome-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   DASHBOARD ONLY CARDS
+========================= */
+
+.dashboard-widget-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.dashboard-widget-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 20px;
+
+  background: linear-gradient(
+    270deg,
+    #ff4d4d,
+    #4d79ff,
+    #4dff88,
+    #ffcc00,
+    #ff4d4d
+  );
+
+  background-size: 400% 400%;
+  animation: borderMove 6s linear infinite;
+}
+
+.dashboard-widget-card::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: white;
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.dashboard-widget-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* =========================
+   CHART CARD
+========================= */
+
+.chart-card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.chart-wrapper {
+  height: 250px;
+  width: 100%;
+}
+
+/* =========================
+   ICONS
+========================= */
+
+.icon-box {
+  width: 65px;
+  height: 65px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #eef4ff, #dbeafe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.dashboard-label {
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.dashboard-value {
+  margin-top: 10px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.text-blue {
+  color: #2563eb;
+}
+
+.text-orange {
+  color: #f59e0b;
+}
+
+.text-green {
+  color: #10b981;
+}
+
+.chart-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .welcome-title {
+    font-size: 22px;
+  }
+
+  .dashboard-value {
+    font-size: 28px;
+  }
+}

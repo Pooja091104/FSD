@@ -1,0 +1,149 @@
+/* Page background */
+.container-fluid {
+  background: #f4f7fb;
+  min-height: 100vh;
+  padding: 20px 30px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Title */
+h3 {
+  font-weight: 700;
+  color: #1f2a44;
+  letter-spacing: 0.5px;
+}
+
+/* Search box */
+input.form-control {
+  border-radius: 12px;
+  padding: 12px 15px;
+  border: 1px solid #dbe3ee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+input.form-control:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 0.2rem rgba(74,144,226,0.2);
+}
+
+/* Card styling */
+.card {
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* Image */
+.card-img-top {
+  transition: transform 0.4s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Card body */
+.card-body {
+  padding: 18px;
+}
+
+/* Title */
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2a44;
+}
+
+/* Category text */
+.text-muted {
+  font-size: 14px;
+}
+
+/* Badge */
+.badge {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #4a90e2, #357ABD);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #357ABD, #2c5f9e);
+  transform: scale(1.03);
+}
+
+.btn-outline-primary {
+  border-color: #4a90e2;
+  color: #4a90e2;
+}
+
+.btn-outline-primary:hover {
+  background: #4a90e2;
+  color: #fff;
+}
+
+/* Modal background */
+.modal {
+  backdrop-filter: blur(5px);
+}
+
+/* Modal box */
+.modal-content {
+  border-radius: 16px;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal header */
+.modal-header {
+  background: linear-gradient(135deg, #4a90e2, #357ABD);
+  color: white;
+}
+
+/* Modal body */
+.modal-body {
+  padding: 20px;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Modal image */
+.modal-body img {
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Close button */
+.btn-close {
+  filter: invert(1);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
